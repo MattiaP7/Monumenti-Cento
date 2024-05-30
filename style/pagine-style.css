@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+body {
+    font-family: 'Poppins', Arial;
+    font-size: 25px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    height: 1000px;
+}
+
+/*separatori*/
+.separatore {
+    padding-top: 5rem;
+}
+
+.separatore-testo {
+    padding-top: 1rem;
+}
+
+/* navbar */
+.zona-superiore {
+    display: flex;
+    margin: auto;
+}
+
+.zona-superiore h1 {
+    text-align: center;
+}
+
+.zona-superiore .home {
+    position: absolute;
+    top: 2;
+    left: 1.25rem;
+}
+
+.zona-superiore .stemma {
+    position: absolute;
+    top: 0;
+    right: 1.25rem;
+    padding: 0;
+}
+
+.zona-superiore .stemma img {
+    width: 250px;
+    height: 150px;
+}
+
+.zona-superiore .home a {
+    text-decoration: none;
+    padding: 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.35rem;
+    margin: 4px 2px;
+    color: black;
+}
+
+.zona-superiore .home a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.35rem;
+    margin: 4px 2px;
+    border-radius: 50%;
+    color: black;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.navigation a:first-child {
+    display: none;
+}
+
+/* main */
+
+main {
+    /*text-align: center;*/
+    font-size: 1.5rem;
+}
+
+.testo {
+    width: 70%;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*footer section*/
+.immagini {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    gap: 3rem;
+}
+
+.mapp {
+    padding-top: 1.5rem;
+    margin: auto;
+    display: block;
+}
+iframe{
+    width: 450px;
+    height: 450px;
+}
+
+.hr {
+    border-top: 2px solid grey;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer {
+    padding-bottom: 1rem;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+@media (max-width: 920px) {
+    .stemma {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+    .main{
+        font-size: 1.25rem;
+    }
+    .navigation a {
+        font-size: 1rem;
+    }
+    .navigation a:first-child {
+        display: block;
+    }
+    iframe{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 530px){
+    iframe{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width: 470px){
+    iframe{
+        height: 230px;
+        width: 230px;
+    }
+}
